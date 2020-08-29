@@ -15,10 +15,9 @@ const blogSchema = new Schema(
     body: {
       type: String,
       required: true,
-    },
-  },
-  { timestamps: true }
-);
+    },  
+  createdAt: {type: Date, default: Date.now},
+});
 
 //The model surrounds the schema and provides an interface to communicate with a
 //database collection for the document type
